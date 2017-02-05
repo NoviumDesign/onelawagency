@@ -1,0 +1,16 @@
+.arrow
+  position: absolute
+  bottom: 1em
+  left: auto
+  right: auto
+
+.arrow-down
+  width: 0 
+  height: 0 
+  border-left: 15px solid transparent
+  border-right: 15px solid transparent
+  border-top: 20px solid #ffffff
+
+  &:hover
+    border-top-color: shade(#ffffff, 25%)
+    transition: border-color $base-duration $base-timing
