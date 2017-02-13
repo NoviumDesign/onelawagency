@@ -1,0 +1,14 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Anton Kjörck Lindén -- Lead developer
+
+# THANKS
+
+    Samuel Lie, for some nice animation ideas!
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5, Normalize.css, Middleman

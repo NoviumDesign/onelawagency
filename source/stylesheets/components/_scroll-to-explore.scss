@@ -62,6 +62,9 @@
   right: 0;
   bottom: 1em;
   text-align: center;
+  @include breakpoint(max-width 599px) {
+    display: none;
+  }
 }
 
 .scroll-btn > * {

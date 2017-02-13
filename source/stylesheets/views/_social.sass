@@ -3,13 +3,15 @@
   color: #1d1d1b
 
   .social__text
-    font-size: 4rem
-    letter-spacing: 0.5rem
+    font-size: 2rem
     text-transform: uppercase
     text-align: center
     font-family: 'Tw-Cen-MT'
     line-height: 1
     margin-bottom: 2rem
+    +breakpoint(600px)
+      font-size: 4rem
+      letter-spacing: 1.2rem
 
   .icons
     transition: all 0.5s
@@ -46,7 +48,9 @@
         animation-delay: 375ms
 
   .icons__icon
+    +breakpoint(max-width 599px)
+    max-width: 60px !important
     margin-right: 1em
-    
+
     &:last-child
       margin-right: 0

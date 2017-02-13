@@ -1,19 +1,30 @@
 .concept
+  background-image: url('/images/sky.jpg')
+  background-attachment: fixed
 
 .concept__content
   display: flex
-  flex-direction: row
+  flex-direction: column
   align-items: center
   width: 100%
   max-width: 75rem
 
+  +breakpoint(600px)
+    flex-direction: row
+
 .concept__logo
-  padding-right: 2rem
   flex: 0 0 calc((100% - 103px)/2)
+  +breakpoint(max-width 599px)
+    margin-bottom: 2rem
+  +breakpoint(600px)
+    padding-right: 2rem
 
 .concept__divider
+  +breakpoint(max-width 599px)
+    display: none
   flex: 0 0 103px
 
 .concept__text
-  padding-left: 2rem
   flex: 0 0 calc((100% - 103px)/2)
+  +breakpoint(600px)
+    padding-left: 2rem

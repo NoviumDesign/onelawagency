@@ -20,3 +20,5 @@ gem "oga"
 gem 'middleman-autoprefixer'
 
 gem "middleman-minify-html"
+
+gem "breakpoint"
