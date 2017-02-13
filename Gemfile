@@ -13,3 +13,10 @@ gem 'middleman', '>= 4.0.0'
 gem 'middleman-livereload'
 
 gem "bourbon", ">= 5.0.0.beta.7"
+
+gem "middleman-sprockets"
+gem "oga"
+
+gem 'middleman-autoprefixer'
+
+gem "middleman-minify-html"

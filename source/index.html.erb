@@ -1,8 +1,8 @@
 ---
-title: Welcome to Middleman
+title: One Law Agency
 ---
 <section class="front">
-  <img src="/images/brand-symbol.svg">
+  <%= inline_svg("brand-symbol") %>
 
 <div class="scroll-btn">
 
@@ -16,5 +16,34 @@ title: Welcome to Middleman
 </div>
 
 </section>
-<section>2</section>
-<section>3</section>
+
+<section class="concept">
+  <div class="concept__content">
+    <div class="concept__logo"><%= inline_svg("logo")%></div>
+    <div class="concept__divider"><%= inline_svg("bended-line")%></div>
+    <div class="concept__text">
+      <p>
+        “[One]law: stands for a perfect law that brings power to talent and creativity. In this case, it’s also an conscious agency in the entertainment industry. We work with artist bookings, branding and management with a twist of a powerful life philosophy.”
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="social">
+  <span class="social__text">Join our journey</span>
+    <a href="http://facebook.com/onelawagency" target="_blank" class="icons">
+      <%= inline_svg("thumb-up", class: "icons__icon icons__icon--thumb-up") %>
+      <%= inline_svg("love", class: "icons__icon icons__icon--love") %>
+      <%= inline_svg("grin", class: "icons__icon icons__icon--grin") %>
+      <%= inline_svg("w00t", class: "icons__icon icons__icon--w00t") %>
+    </a>
+</section>
+
+<section class="contact">
+  <%= inline_svg("logo")%>
+  <div class="contact__details">
+    <tel>+46 734 100 664</tel>
+    <a href="mailto:weare@onelawagency.com">weare@onelawagency.com</a>
+    <a href="http://facebook.com/onelawagency" target="_blank">facebook.com/onelawagency</a>
+  </div>
+</section>

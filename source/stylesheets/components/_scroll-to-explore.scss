@@ -58,8 +58,8 @@
 .scroll-btn {
   display: block;
   position: absolute;
-  left: auto;
-  right: auto;
+  left: 0;
+  right: 0;
   bottom: 1em;
   text-align: center;
 }
@@ -71,6 +71,10 @@
   color: #7f8c8d;
   color: #ffffff;
   letter-spacing: 2px;
+}
+
+.scroll-btn a {
+  display: block;
 }
 
 .scroll-btn > *:hover,

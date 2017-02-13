@@ -1,0 +1,23 @@
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  to {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+}
+
+@keyframes bounceUp {
+  0% {
+    transform: translateY(0) scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: translateY(-30px) scale3d(1.15, 1.15, 1.15);
+  }
+
+  100% {
+    transform: translateY(0) scale3d(1, 1, 1);
+  }
+}
