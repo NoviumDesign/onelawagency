@@ -13,18 +13,28 @@
     flex-direction: row
 
 .concept__logo
-  flex: 0 0 calc((100% - 103px)/2)
+  text-align: center
+
   +breakpoint(max-width 599px)
     margin-bottom: 2rem
+
   +breakpoint(600px)
     padding-right: 2rem
+    width: calc((100% - 103px)/2)
 
 .concept__divider
+  margin-left: -20px
+  width: 103px
+
   +breakpoint(max-width 599px)
     display: none
-  flex: 0 0 103px
 
 .concept__text
-  flex: 0 0 calc((100% - 103px)/2)
   +breakpoint(600px)
+    width: calc((100% - 103px)/2)
     padding-left: 2rem
+
+  p
+    margin-left: auto
+    margin-right: auto
+    max-width: 440px
