@@ -1,0 +1,60 @@
+.site-header
+  background: rgba(0, 0, 0, 0.95)
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  z-index: 9998
+  padding: 1em 3em
+
+.branding
+  display: block
+  float: left
+  max-width: 100px
+  line-height: 1
+
+.nav-overlay-active .site-header
+  background-color: transparent !important
+
+.site-header__nav-trigger
+  float: right
+  width: 35px
+  height: 23px
+  color: #ffffff
+  position: relative
+  z-index: 9999
+  cursor: pointer
+
+  span
+    height: 2px
+    display: block
+    position: absolute
+    height: 3px
+    width: 100%
+    background: #ffffff
+    opacity: 1
+    left: 0
+    transition: all 0.3s
+
+  span:nth-child(1)
+    top: 0px
+
+  span:nth-child(2)
+    top: 11px
+
+  span:nth-child(3)
+    top: 21px
+
+.site-header__nav-trigger.active
+
+  span:nth-child(1)
+    top: 11px
+    width: 0%
+    left: 50%
+
+  span:nth-child(2)
+    transform: rotate(45deg)
+
+  span:nth-child(3)
+    top: 11px
+    transform: rotate(-45deg)

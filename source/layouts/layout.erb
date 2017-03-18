@@ -9,10 +9,40 @@
     <title><%= current_page.data.title || "Onelaw Agency - We are one" %></title>
 
     <%= stylesheet_link_tag :site %>
-    <%= javascript_include_tag :all %>
+    <%= javascript_include_tag :main %>
   </head>
 
   <body class="<%= page_classes %>">
+    <header class="site-header">
+      <a class="branding" href="/">
+        <%= inline_svg("brand-symbol", class: "branding__logo") %>
+      </a>
+      <div class="site-header__nav-trigger" id="jNavTrigger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+    <div class="nav-overlay" id="jNavOverlay">
+
+      <div class="nav-overlay__container">
+
+        <nav class="nav-overlay__nav">
+
+          <ul>
+            <li>
+              <a href="#">Artister</a>
+              <a href="#">One Law Agency</a>
+              <a href="#">Press</a>
+              <a href="#">Kontakt</a>
+            </li>
+          </ul>
+
+        </nav>
+
+      </div>
+
+    </div>
     <%= yield %>
     <% # <footer class="site-footer">© 2017 One Law Agency</footer> %>
   </body>

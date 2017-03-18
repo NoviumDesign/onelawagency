@@ -1,0 +1,38 @@
+.nav-overlay
+  opacity: 0
+  visibility: hidden
+  transition: opacity 0.5s, visibility 0s 0.5s
+  position: fixed
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  background: rgba(30,38,45,0.95)
+  z-index: 9997
+
+.nav-overlay-active .nav-overlay
+  opacity: 1
+  visibility: visible
+  transition: opacity 0.5s
+
+.nav-overlay__container 
+  display: flex
+  padding: 80px 10% 80px 10%
+  height: 100%
+  flex-direction: row
+  align-items: center
+  max-width: 1800px
+  margin: 0 auto
+
+.nav-overlay__nav a
+  text-transform: uppercase
+  display: block
+  color: #ffffff
+  transition: color 0.2s
+  font-size: 4.5rem
+  line-height: 4rem
+  font-family: $heading-font-family
+  letter-spacing: -2px
+
+.nav-overlay__nav a:hover
+  color: #019875
